@@ -1,46 +1,287 @@
-h1 {
-    text-align: center;
-    font-family: medium-content-sans-serif-font,"Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Arial,sans-serif;
-    font-size: 32px;
-    font-weight: 700;
-    color: rgba(0,0,0,.8);
-}
-
-h2 {
-    text-align: center;
-    font-size: 23px;
-    font-family: medium-content-sans-serif-font,"Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Arial,sans-serif;
-    font-weight: 300;
-    color: rgba(0,0,0,.44);
-}
+@font-face {
+  font-family: LinLibertine_R.ttf;
+  src: url(LinLibertine_R.ttf);
+  }
 
 body {
-    font-size: 18px;
-    line-height: 1.5;
-    letter-spacing: -.004em;
-    font-family: medium-content-serif-font,Georgia,Cambria,"Times New Roman",Times,serif;
-    color:  rgba(0,0,0,.8);
-    margin: -25px;
+  margin: 0px;
+  font-family: sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #0645ad;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+sup {
+  color: #0645ad;
+}
+
+/*end of all item related CSS*/
+
+nav {
+  height: 80px;
+  background: linear-gradient(#ffffff 50%,#f6f6f6 100%);
+  border-bottom: 1px solid #a7d7f9;
+}
+
+aside {
+  width: 160px;
+  height: auto;
+  background: linear-gradient(#ffffff 3%,#f6f6f6 7%);
+  float: left;
+}
+
+main{
+  background: #fff;
+  margin-left: 160px;
+  border-left: 1px solid #a7d7f9;
+  border-bottom: 1px solid #a7d7f9;
+  overflow: hidden;
+  color: #252525;
+  padding: 0px 25px;
 }
 
 img {
-  min-width: 100%;
+  width: 110px;
+  margin-left: 25px;
+  margin-top: 10px;
 }
 
-article {
-  margin-left: 330px;
-  margin-right: 330px;
+aside, nav{
+  font-size: 0.75em;
+}
+
+aside ul, nav ul {
+  list-style-type: none;
+  margin: 0px;
+  padding-left: 0px;
+}
+
+aside ul li {
+  margin: 0.4em 0 0.4em 0;
+}
+
+aside h4 {
+  font-weight: normal;
+  color: #4d4d4d;
+  padding-left: 15px;
+  margin: 0px;
+}
+
+.navigation ul{
+  margin-top: 30px;
+  -webkit-padding-start: 20px;
+}
+
+.left ul {
+  -webkit-padding-start: 30px;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0));
+}
+
+/*end of sidebar CSS*/
+
+.profile ul li {
+  display: inline;
+  margin: 0px 5px;
+}
+
+.left_tab {
+  clear: right;
+  float: left;
+}
+
+.profile {
+  float: right;
+  margin: 10px 10px 15px 5px;
+}
+
+.right_tab, .searchbar {
+  float: right;
+  margin: 10px 10px 0px 0px;
+}
+
+.tab {
+  margin-top: 17px;
+  font-size: 13px;
+  height: 20px;
+}
+
+.tab li {
+  display: inline;
+  float: left;
+}
+
+.tab a {
+  padding: 10px 5px;
+  height: 20px;
+  border-left: 1px solid #a7d7f9;
+}
+
+.tab a:active {
+  background: white;
+  border-bottom: 3px solid white;
+  color: currentColor;
+  text-decoration: underline;
+}
+
+.tab li:last-child a {
+  border-right: 1px solid #a7d7f9;
+}
+
+.searchbar input {
+  width: 290px;
+  padding: 0.2em 0 0.2em 0.2em
+}
+
+/*end of navigation CSS*/
+
+table {
+  color: #000;
+  border: 1px solid #aaa;
+  width: 220px;
+  float: right;
+  background: white;
+  margin-left: 15px;
+}
+
+tbody td:first-child {
+  font-weight: bold;
+}
+
+thead td:last-child {
+  text-align: center;
+  padding-top: 0px;
+}
+
+table img {
+  margin: 0px 20px;
+  height: 275px;
+  width: 220px;
+}
+
+td {
+  vertical-align: top;
+  text-align: left;
+  font-size: 12px;
+  padding: 5px 5px;
+}
+
+/*end of table CSS*/
+
+h1, h2, h3 {
+  color: #000;
+  padding-bottom: 0.1em;
+  margin: 20px 0px 5px;
+}
+
+h1, h2 {
+  font-family: LinLibertine_R;
+  font-weight: normal;
+  border-bottom: 1px solid #aaa;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+h2 {
+  font-size: 22px;
+}
+
+h3 {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+main p, main ul li, blockquote {
+  font-size: 15px;
+  line-height: 1.6em;
 }
 
 p {
-    font-style: italic;
-    line-height: 1.5;
+  margin: 5px 0px;
 }
 
-#p1 {
+.subtitle {
+  font-size: 13px;
+  margin-bottom: 15px;
+}
+
+.direction {
+  font-style: italic;
+  margin: 5px 0px 7px 20px;
+}
+
+.content {
+  background: #f9f9f9;
+  border: 1px solid #aaa;
+  font-size: 18px;
+  width: 120px;
+}
+
+.content ol {
+    list-style-type: none;
+    font-weight: normal;
+    font-size: 13px;
+    padding-left: 7px;
+    line-height: 1.8em;
+}
+
+.content ol ol {
+  padding-left: 25px;
+}
+
+h5 {
+  color: #000;
+  font-size: 13px;
+  margin: 10px 25px 5px;
+}
+
+.picture {
+  border: 1px solid #ccc;
+  padding: 3px;
+  background-color: #f9f9f9;
+  width: 220px;
+  height: auto;
+  float: right;
+  margin-left: 15px;
+  margin-bottom: 10px;
+}
+
+.picture p {
+  font-size: 12px;
+  margin: 0px 5px;
+}
+
+.picture img {
+  margin: 3px;
+  width: 97%;
+}
+
+main ul {
+  list-style: none;
+}
+
+main ul li:before {
+  content: '\2022';
+  color: #008080;
+  padding-right: 10px;
+  margin-left: -1em;
+  margin-top: 5px;
+  font-size: 20px;
+}
+
+.citation {
   font-style: normal;
-}
-
-a{
-  font-weight: bold;
+  margin-left: 70px;
 }
